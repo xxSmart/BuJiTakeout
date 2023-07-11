@@ -3,6 +3,7 @@ package com.xx.buji.controller;
 import com.xx.buji.common.Result;
 import com.xx.buji.entity.Orders;
 import com.xx.buji.service.OrdersService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 @RequestMapping("/order")
+@Api(tags = "下单接口接口")
 public class OrdersController {
 
     @Autowired

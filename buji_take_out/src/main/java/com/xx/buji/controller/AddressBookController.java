@@ -6,6 +6,7 @@ import com.xx.buji.common.BaseContext;
 import com.xx.buji.common.Result;
 import com.xx.buji.entity.AddressBook;
 import com.xx.buji.service.AddressBookService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/addressBook")
+@Api(tags = "地址薄相关接口")
 public class AddressBookController {
 
     @Autowired

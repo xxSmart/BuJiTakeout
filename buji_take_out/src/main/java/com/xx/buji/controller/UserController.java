@@ -5,6 +5,7 @@ import com.xx.buji.common.Result;
 import com.xx.buji.entity.User;
 import com.xx.buji.service.UserService;
 import com.xx.buji.utils.ValidateCodeUtils;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("/user")
 @RestController
 @Slf4j
+@Api(tags = "移动端登录验证码")
 public class UserController {
     @Autowired
     private UserService userService;

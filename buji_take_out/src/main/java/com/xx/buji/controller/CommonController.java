@@ -1,6 +1,7 @@
 package com.xx.buji.controller;
 
 import com.xx.buji.common.Result;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +24,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/common")
 @Slf4j
+@Api(tags = "文件的上传下载接口")
 public class CommonController {
     @Value("${buji.path}")//该路径在yml配置文件中手动配置
     private String basePath;//存放到的路径，

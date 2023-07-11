@@ -10,6 +10,7 @@ import com.xx.buji.entity.DishFlavor;
 import com.xx.buji.service.CategoryService;
 import com.xx.buji.service.DishFlavorService;
 import com.xx.buji.service.DishService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,7 @@ import java.util.stream.Collectors;
 @RequestMapping("/dish")
 @RestController
 @Slf4j
+@Api(tags = "菜品管理接口")
 public class DishController {
     @Autowired
     private RedisTemplate redisTemplate;
